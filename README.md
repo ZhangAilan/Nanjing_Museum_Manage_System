@@ -1,0 +1,2 @@
+# Nanjing_Museum_Manage_System
+数据库课程设计作业，主要通过python的tkinter库创建图形界面+SQL server数据库来实现管理博物馆信息、馆藏文物信息、借出借入文物信息、工作人员信息。
