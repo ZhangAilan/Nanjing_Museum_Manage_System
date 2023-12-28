@@ -6,9 +6,13 @@ from tkinter import *                             #导入tkinter模块的所有�
 import tkinter.messagebox as messagebox           #导入弹窗模块
 from PIL import Image,ImageTk                     #导入图像处理模块
 import pandas as pd                               #导入pandas模块，用于读取excel文件
+<<<<<<< HEAD
 from cefpython3 import cefpython as cef           #导入cefpython模块，用于插入html文件
 import sys, os                                    #导入系统模块
 import threading                                  #导入线程模块
+=======
+
+>>>>>>> main
 
 #起始页面
 class StartPage:
@@ -378,6 +382,7 @@ class MuseumManage:
         button_back = tk.Button(self.window, text='返回', font=('宋体', 12), width=10, height=1, command=self.back)
         button_back.place(x=1050, y=550)
 
+<<<<<<< HEAD
         #插入html,使用多线程
         threading.Thread(target=self.InsertHtml,args=()).start()  
 
@@ -413,6 +418,10 @@ class MuseumManage:
         cef.Shutdown()                    #关闭子线程
         self.window.destroy()             #关闭窗口
 
+=======
+        self.window.mainloop()
+    
+>>>>>>> main
 
     #向表中插入数据
     def InsertData(self):
