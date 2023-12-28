@@ -6,7 +6,13 @@ from tkinter import *                             #导入tkinter模块的所有�
 import tkinter.messagebox as messagebox           #导入弹窗模块
 from PIL import Image,ImageTk                     #导入图像处理模块
 import pandas as pd                               #导入pandas模块，用于读取excel文件
+<<<<<<< HEAD
+from cefpython3 import cefpython as cef           #导入cefpython模块，用于插入html文件
+import sys, os                                    #导入系统模块
+import threading                                  #导入线程模块
+=======
 
+>>>>>>> main
 
 #起始页面
 class StartPage:
@@ -376,8 +382,46 @@ class MuseumManage:
         button_back = tk.Button(self.window, text='返回', font=('宋体', 12), width=10, height=1, command=self.back)
         button_back.place(x=1050, y=550)
 
+<<<<<<< HEAD
+        #插入html,使用多线程
+        threading.Thread(target=self.InsertHtml,args=()).start()  
+
+        self.window.mainloop()
+        self.window.protocol("WM_DELETE_WINDOW", self.on_close)   #关闭窗口时调用on_close函数
+
+    
+    #插入html
+    def InsertHtml(self):
+        #插入html文件
+        html_frame=tk.Frame(self.window,bg='white',width=580,height=550)
+        html_frame.place(x=50,y=40)
+        self.window.update()
+        
+        sys.excepthook=cef.ExceptHook   #设置异常处理函数
+        cef.Initialize()                #初始化浏览器
+        print('正在加载地图......')
+        
+        window_info=cef.WindowInfo(html_frame.winfo_id())   #获取浏览器窗口信息
+        window_info.SetAsChild(html_frame.winfo_id(),[0,0,580,550])   #将浏览器窗口设置为子窗口
+        self.browser=cef.CreateBrowserSync(window_info,url=os.path.abspath("NanjingCityMap.html"))   #创建浏览器对象
+        bindings=cef.JavascriptBindings(bindToFrames=False,bindToPopups=False)   #绑定js
+        self.browser.SetJavascriptBindings(bindings)    #将js绑定到浏览器对象
+        
+        #无限循环，不断调用消息循环，即CEF的消息会被持续地处理，但是每次处理都不会阻塞主线程太长时间。
+        #这样保证CEF消息循环得到处理，同时也保证主线程可以处理其他任务。
+        while True:
+            cef.MessageLoopWork()   
+
+    
+    def on_close(self):
+        self.browser.CloseBrowser(True)   #关闭浏览器
+        cef.Shutdown()                    #关闭子线程
+        self.window.destroy()             #关闭窗口
+
+=======
         self.window.mainloop()
     
+>>>>>>> main
 
     #向表中插入数据
     def InsertData(self):

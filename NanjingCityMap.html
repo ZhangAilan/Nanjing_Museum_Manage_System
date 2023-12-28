@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d17b073447243d74a16453d3197b487 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d17b073447243d74a16453d3197b487" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d17b073447243d74a16453d3197b487 = L.map(
+                "map_1d17b073447243d74a16453d3197b487",
+                {
+                    center: [32.04, 118.78],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de19254067a0727a956bab6a9c5e7485 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var marker_4c8bdb5577156e7ebbb540b5ee0bd1e5 = L.marker(
+                [32.04446888, 118.8209673],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_18ec34bc4c27b24e7f334876b88b166e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c8bdb5577156e7ebbb540b5ee0bd1e5.setIcon(icon_18ec34bc4c27b24e7f334876b88b166e);
+        
+    
+        var popup_cdca5a5f96ed0df2622446cb0143541c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d11cb3c57c3acf7f86ba3e33a884c771 = $(`<div id="html_d11cb3c57c3acf7f86ba3e33a884c771" style="width: 100.0%; height: 100.0%;">南京博物院</div>`)[0];
+                popup_cdca5a5f96ed0df2622446cb0143541c.setContent(html_d11cb3c57c3acf7f86ba3e33a884c771);
+            
+        
+
+        marker_4c8bdb5577156e7ebbb540b5ee0bd1e5.bindPopup(popup_cdca5a5f96ed0df2622446cb0143541c)
+        ;
+
+        
+    
+    
+            var marker_e79531e0cec83ecf1cd14aadf0c98a2a = L.marker(
+                [32.03639749, 118.7701077],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_a613e5a57bc2d38955e34845e56b1cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e79531e0cec83ecf1cd14aadf0c98a2a.setIcon(icon_a613e5a57bc2d38955e34845e56b1cf2);
+        
+    
+        var popup_68d87e5721e02d85f2dddb886e6d455f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2de9bef6715bce59568c7d10c5958ba2 = $(`<div id="html_2de9bef6715bce59568c7d10c5958ba2" style="width: 100.0%; height: 100.0%;">南京市博物总馆</div>`)[0];
+                popup_68d87e5721e02d85f2dddb886e6d455f.setContent(html_2de9bef6715bce59568c7d10c5958ba2);
+            
+        
+
+        marker_e79531e0cec83ecf1cd14aadf0c98a2a.bindPopup(popup_68d87e5721e02d85f2dddb886e6d455f)
+        ;
+
+        
+    
+    
+            var marker_fc69259830c9d49211f356b63347162e = L.marker(
+                [32.04463692, 118.7965663],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_a34218e8704dc106ca31121daa7636b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc69259830c9d49211f356b63347162e.setIcon(icon_a34218e8704dc106ca31121daa7636b2);
+        
+    
+        var popup_718f3e9edbd10b6b43161b4375925aff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d74a794574fd9242437836ba64b6d417 = $(`<div id="html_d74a794574fd9242437836ba64b6d417" style="width: 100.0%; height: 100.0%;">中共代表团梅园新村纪念馆</div>`)[0];
+                popup_718f3e9edbd10b6b43161b4375925aff.setContent(html_d74a794574fd9242437836ba64b6d417);
+            
+        
+
+        marker_fc69259830c9d49211f356b63347162e.bindPopup(popup_718f3e9edbd10b6b43161b4375925aff)
+        ;
+
+        
+    
+    
+            var marker_a5fbd9b34565d0c127ad20deeddd3cb0 = L.marker(
+                [32.045, 118.79379],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_d89f0d0e2b9981767d232426cefe3cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5fbd9b34565d0c127ad20deeddd3cb0.setIcon(icon_d89f0d0e2b9981767d232426cefe3cfd);
+        
+    
+        var popup_0a1ee3b940ac03c11120e64b3c0c5e8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dd0080dc6279d169d192a457fbe6c36 = $(`<div id="html_1dd0080dc6279d169d192a457fbe6c36" style="width: 100.0%; height: 100.0%;">六朝博物馆</div>`)[0];
+                popup_0a1ee3b940ac03c11120e64b3c0c5e8f.setContent(html_1dd0080dc6279d169d192a457fbe6c36);
+            
+        
+
+        marker_a5fbd9b34565d0c127ad20deeddd3cb0.bindPopup(popup_0a1ee3b940ac03c11120e64b3c0c5e8f)
+        ;
+
+        
+    
+    
+            var marker_a86825865e09a6d2a6483e8904d6968a = L.marker(
+                [32.02334, 118.78549],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_eda0d3f4764d948a184e9988a59788c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a86825865e09a6d2a6483e8904d6968a.setIcon(icon_eda0d3f4764d948a184e9988a59788c6);
+        
+    
+        var popup_8e1c5ad025a37314484fb3c360991976 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79a16a7a57fa4979382736616de5fe69 = $(`<div id="html_79a16a7a57fa4979382736616de5fe69" style="width: 100.0%; height: 100.0%;">中国科举博物馆</div>`)[0];
+                popup_8e1c5ad025a37314484fb3c360991976.setContent(html_79a16a7a57fa4979382736616de5fe69);
+            
+        
+
+        marker_a86825865e09a6d2a6483e8904d6968a.bindPopup(popup_8e1c5ad025a37314484fb3c360991976)
+        ;
+
+        
+    
+    
+            var marker_da55368615eada7421bd4b23be3c19c0 = L.marker(
+                [32.07598, 118.7265],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_10ea38f997765313893b474eb38ef92a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da55368615eada7421bd4b23be3c19c0.setIcon(icon_10ea38f997765313893b474eb38ef92a);
+        
+    
+        var popup_6cc6555356b2a4114bdb56ce4bb50fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_627763f259eefc13e7627614d1ace16a = $(`<div id="html_627763f259eefc13e7627614d1ace16a" style="width: 100.0%; height: 100.0%;">渡江胜利纪念馆</div>`)[0];
+                popup_6cc6555356b2a4114bdb56ce4bb50fa3.setContent(html_627763f259eefc13e7627614d1ace16a);
+            
+        
+
+        marker_da55368615eada7421bd4b23be3c19c0.bindPopup(popup_6cc6555356b2a4114bdb56ce4bb50fa3)
+        ;
+
+        
+    
+    
+            var marker_188671b3128dafc89fae1f09fba78195 = L.marker(
+                [32.02793, 118.77659],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_7ef6f64fcec57f0f9e5b3ec4eac1601d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_188671b3128dafc89fae1f09fba78195.setIcon(icon_7ef6f64fcec57f0f9e5b3ec4eac1601d);
+        
+    
+        var popup_f3a2488e80cea6166d867c44b5d82ace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9fba7aeb49e9acba985010b8d2d9384 = $(`<div id="html_f9fba7aeb49e9acba985010b8d2d9384" style="width: 100.0%; height: 100.0%;">南京民俗博物馆</div>`)[0];
+                popup_f3a2488e80cea6166d867c44b5d82ace.setContent(html_f9fba7aeb49e9acba985010b8d2d9384);
+            
+        
+
+        marker_188671b3128dafc89fae1f09fba78195.bindPopup(popup_f3a2488e80cea6166d867c44b5d82ace)
+        ;
+
+        
+    
+    
+            var marker_d8fd6d6fdb7f5cd491a2e4ec8d406ec2 = L.marker(
+                [32.04457, 118.78898],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_79e4ab4e47d1629f84e4df93ba2e9711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8fd6d6fdb7f5cd491a2e4ec8d406ec2.setIcon(icon_79e4ab4e47d1629f84e4df93ba2e9711);
+        
+    
+        var popup_8881d90ce6329adf55061bf03ad1ef76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b411faa4aae641815713fdb91b9fca7a = $(`<div id="html_b411faa4aae641815713fdb91b9fca7a" style="width: 100.0%; height: 100.0%;">江宁织造博物馆</div>`)[0];
+                popup_8881d90ce6329adf55061bf03ad1ef76.setContent(html_b411faa4aae641815713fdb91b9fca7a);
+            
+        
+
+        marker_d8fd6d6fdb7f5cd491a2e4ec8d406ec2.bindPopup(popup_8881d90ce6329adf55061bf03ad1ef76)
+        ;
+
+        
+    
+    
+            var marker_c894e8424b9a22b7643abf86b8f04185 = L.marker(
+                [32.02311, 118.78004],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_cfba4f331679b339a1d61bbaa6639a90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c894e8424b9a22b7643abf86b8f04185.setIcon(icon_cfba4f331679b339a1d61bbaa6639a90);
+        
+    
+        var popup_aa6fbd25917dca77288620e7df53ef81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eb1a4b877243fc8ce3611d28e22ea8a = $(`<div id="html_4eb1a4b877243fc8ce3611d28e22ea8a" style="width: 100.0%; height: 100.0%;">太平天国历史博物馆</div>`)[0];
+                popup_aa6fbd25917dca77288620e7df53ef81.setContent(html_4eb1a4b877243fc8ce3611d28e22ea8a);
+            
+        
+
+        marker_c894e8424b9a22b7643abf86b8f04185.bindPopup(popup_aa6fbd25917dca77288620e7df53ef81)
+        ;
+
+        
+    
+    
+            var marker_d19da77597727b48a167c7a507a82bf0 = L.marker(
+                [32.04673, 118.80205],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_6b6adb3a87964a4f49cb1bf1cc3f2415 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d19da77597727b48a167c7a507a82bf0.setIcon(icon_6b6adb3a87964a4f49cb1bf1cc3f2415);
+        
+    
+        var popup_e7cc962bd918982cd43546aaa5281061 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52e86d6a26f6bc7e2e6c99fa19ed0377 = $(`<div id="html_52e86d6a26f6bc7e2e6c99fa19ed0377" style="width: 100.0%; height: 100.0%;">南京地质博物馆</div>`)[0];
+                popup_e7cc962bd918982cd43546aaa5281061.setContent(html_52e86d6a26f6bc7e2e6c99fa19ed0377);
+            
+        
+
+        marker_d19da77597727b48a167c7a507a82bf0.bindPopup(popup_e7cc962bd918982cd43546aaa5281061)
+        ;
+
+        
+    
+    
+            var marker_fc64a4b56bb4d8ca39090f1ecc2d021c = L.marker(
+                [32.06164, 118.79011],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_4d5240d0b8fec7f77f04cc1d4a780abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc64a4b56bb4d8ca39090f1ecc2d021c.setIcon(icon_4d5240d0b8fec7f77f04cc1d4a780abb);
+        
+    
+        var popup_aaebe7ab8ba9d73ed1f7f18ebf1f4f62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6faa18def1ee587a39588c664999c89 = $(`<div id="html_e6faa18def1ee587a39588c664999c89" style="width: 100.0%; height: 100.0%;">南京古生物博物馆</div>`)[0];
+                popup_aaebe7ab8ba9d73ed1f7f18ebf1f4f62.setContent(html_e6faa18def1ee587a39588c664999c89);
+            
+        
+
+        marker_fc64a4b56bb4d8ca39090f1ecc2d021c.bindPopup(popup_aaebe7ab8ba9d73ed1f7f18ebf1f4f62)
+        ;
+
+        
+    
+    
+            var marker_7d68f79a257e93060b8b2d7537bf7b33 = L.marker(
+                [32.03823, 118.73963],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_4511a2ae432a60bcdb5dceaffc5e4435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d68f79a257e93060b8b2d7537bf7b33.setIcon(icon_4511a2ae432a60bcdb5dceaffc5e4435);
+        
+    
+        var popup_068bdd9c6f90db8fde1afa37c49f4a82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aebde975d2f1fe3121ff9e00b65e745 = $(`<div id="html_2aebde975d2f1fe3121ff9e00b65e745" style="width: 100.0%; height: 100.0%;">南京云锦博物馆</div>`)[0];
+                popup_068bdd9c6f90db8fde1afa37c49f4a82.setContent(html_2aebde975d2f1fe3121ff9e00b65e745);
+            
+        
+
+        marker_7d68f79a257e93060b8b2d7537bf7b33.bindPopup(popup_068bdd9c6f90db8fde1afa37c49f4a82)
+        ;
+
+        
+    
+    
+            var marker_44edc1c06e0d7c1412bd0fb131a45f95 = L.marker(
+                [32.01431, 118.77766],
+                {}
+            ).addTo(map_1d17b073447243d74a16453d3197b487);
+        
+    
+            var icon_cb5c1edb0ec03e5b1bf9dc2cee3e8eb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44edc1c06e0d7c1412bd0fb131a45f95.setIcon(icon_cb5c1edb0ec03e5b1bf9dc2cee3e8eb5);
+        
+    
+        var popup_70b93873df9b2fca2e95ebe6bada1c88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b0fae843d6dfc3479423e1d9ee2c66d = $(`<div id="html_1b0fae843d6dfc3479423e1d9ee2c66d" style="width: 100.0%; height: 100.0%;">南京城墙博物馆</div>`)[0];
+                popup_70b93873df9b2fca2e95ebe6bada1c88.setContent(html_1b0fae843d6dfc3479423e1d9ee2c66d);
+            
+        
+
+        marker_44edc1c06e0d7c1412bd0fb131a45f95.bindPopup(popup_70b93873df9b2fca2e95ebe6bada1c88)
+        ;
+
+        
+    
+</script>
+</html>
