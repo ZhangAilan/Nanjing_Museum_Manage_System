@@ -7,6 +7,8 @@
 
 博客：https://zhuanlan.zhihu.com/p/673738513
 
+视频：https://www.bilibili.com/video/BV1pe411z7H9/?spm_id_from=333.999.0.0&vd_source=012f01c73f97da5b9202e8ac4e57e620
+
 交互地图：
 
 ![屏幕截图 2023-12-28 165510](https://github.com/ZhangAilan/Nanjing_Museum_Manage_System/assets/123959805/f42727e1-460d-457f-9955-61d95ee5c1ff)
